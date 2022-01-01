@@ -5,7 +5,7 @@ function inventose()
 {
     app_ico = "https://static.vecteezy.com/system/resources/previews/000/582/320/original/cctv-camera-icon-vector.jpg";
     app_title = "Invento Security Camera";
-    app_link = "";
+    app_link = "https://github.com/Sherry65-code/theifcatcher/archive/refs/heads/main.zip";
     app_des = `This is Invento Security system app. Press q to exit application.
     This is made to catch theif. click it's photo and put it in theif automatically.
     Works with python3 and imports are - Pygame , cv2 , pyautogui.
