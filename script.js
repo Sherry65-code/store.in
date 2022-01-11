@@ -14,6 +14,17 @@ function inventose()
    
     pop_open();
 }
+function inventose2()
+{
+    app_ico = "https://image.flaticon.com/icons/png/512/1183/1183632.png";
+    app_title = "Invento Encrypter";
+    app_link = "https://github.com/Sherry65-code/encrypter2.0/archive/refs/heads/main.zip";
+    app_des = `This is a encryption app that encrypts the alphabets and is made in python3. Uses tkinter module only.Download Now.
+    View it on github on <a href="https://github.com/Sherry65-code/encrypter2.0">this site.</a> Thank you.
+    `;
+   
+    pop_open();
+}
 function pop_close()
 {
     document.getElementById('down').style = "visibility: hidden;";
