@@ -1,47 +1,24 @@
-window.addEventListener('load',()=>{
-document.getElementById('loader').style.visibility = "hidden";
-});
-function inventose()
+function downsrc(appname)
 {
-    app_ico = "https://static.vecteezy.com/system/resources/previews/000/582/320/original/cctv-camera-icon-vector.jpg";
-    app_title = "Invento Security Camera";
-    app_link = "https://github.com/Sherry65-code/theifcatcher/archive/refs/heads/main.zip";
-    app_des = `This is Invento Security system app. Press q to exit application.
-    This is made to catch theif. click it's photo and put it in theif automatically.
-    Works with python3 and imports are - Pygame , cv2 , pyautogui.
-    Change the index no. according to your requirements. Info of
-    index no. in <a href="https://answers.opencv.org/question/83360/how-to-find-my-camera-index/">this article.</a>`;
-   
-    pop_open();
+if (appname == "cal")
+{
+    window.open('https://github.com/Sherry65-code/inventocalculator/tree/main');
 }
-function inventose2()
-{
-    app_ico = "https://image.flaticon.com/icons/png/512/1183/1183632.png";
-    app_title = "Invento Encrypter";
-    app_link = "https://github.com/Sherry65-code/encrypter2.0/archive/refs/heads/main.zip";
-    app_des = `This is a encryption app that encrypts the alphabets and is made in python3. Uses tkinter module only.Download Now.
-    View it on github on <a href="https://github.com/Sherry65-code/encrypter2.0">this site.</a> Thank you.
-    `;
-   
-    pop_open();
 }
-function pop_close()
+function downexe(appname)
 {
-    document.getElementById('down').style = "visibility: hidden;";
- 
+    if (appname == "cal")
+    {
+        window.open('https://drive.google.com/file/d/1DeJXqJsAHlSdzV37HveK8Ifbf9KArkz-/view?usp=download')
+    }
 }
-function pop_open()
+function givewarning(warntext)
 {
-    document.getElementById('down').style = "visibility: visible;";
-    document.getElementById('down').innerHTML = `
-    <img src="`+app_ico+`" alt="" id="app-icon">
-    <div id="close" onclick="pop_close()"></div>
-    <span id="app-text">`+app_title+`</span>
-    <a href="`+app_link+`">
-    <button id="install">Install</button></a>
-    <span id="des-title">Description:-</span>
-    <span id="des">
-    `+app_des+`
-    </span>
-    `;
+    document.getElementById('warndiv').style.visibility = "visible";
+    setTimeout(4000 , runout);
+    document.getElementById('warnspan').innerHTML = warntext;
+}
+function runout()
+{
+    document.getElementById('warndiv').style.visibility = "hidden";
 }

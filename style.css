@@ -1,189 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+#header{
+    background-color: rgb(24, 24, 24);
+    color: aliceblue;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 500;
+}
 body{
-    /* background-color: rgb(229, 241, 252); */
-    overflow: hidden;
-    background-image: url('images/wal.jpg');
-    background-position: center;
-
-    background-repeat: no-repeat;
+    background-image: url('https://www.wallpapers13.com/wp-content/uploads/2018/11/The-Magic-Islands-of-Lofoten-Norway-Europe-winter-morning-light-landscape-Desktop-HD-Wallpaper-For-PC-Tablet-And-Mobile-3840x2160-915x515.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
+}
+#dropdown{
+    position: absolute;
+    font-size: large;
+    right: 30px;
+    top: 25px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    height: 20px;
+    text-align: center;
+    transition: all ease-in-out 0.5s;
+}
+#dropdown:hover{
+    height: 60px;
+}
+#dropdown:hover a{
+    color: aliceblue
+}
+a{
+    color: rgba(240, 248, 255, 0);
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
 }
 #main{
     background-color: rgba(255, 0, 0, 0);
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
     bottom: 0;
-    z-index: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-block-start: 36px;
-    text-align: center;
-}
-#header{
-    background-color: rgba(0, 65, 204, 0);
-    position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    padding: 5px;
-    z-index: 10;
-    color: rgba(255, 255, 255, 0.993);
-    font-size: 20px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-*{
-    font-family: 'PT Sans', sans-serif;
-    outline: none;
+    top: 76px;
+    padding-inline-start: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
 }
 ::-webkit-scrollbar{
-    background-color: rgba(240, 248, 255, 0);
-    
+    width: 1px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: rgba(0, 65, 204, 0.918);
-    border-radius: 15px;
-    border: 2px solid rgba(0, 65, 204, 0.041);
-}
-::selection{
-    user-select: none;
-}
-#banner{
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    background: linear-gradient(to right , rgba(255, 60, 92, 0.295) , rgba(102, 47, 255, 0.308));
-    color: aliceblue;
-    width: 100%;
-    font-size: 30px;
-    padding: 20px;
+h1{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 32px;
 }
 .app{
-    background-color: rgba(199, 229, 255, 0.096);
-    box-shadow: 0px 0px 10px 0px black;
-    width: 90%;
-    border: 0ch;
-    border-radius: 10px;
-    padding: 40px;
-    text-align: right;
-    font-size: 30px;
-    padding-inline-end: 30px;
-    color: rgb(255, 255, 255);
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: 120px 120px;
-    background-position: 0 0;
-    transition: all ease-in-out 0.5s;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-.app:hover{
-box-shadow: 0px 0px 20px 0px black;
-}
-#invento-security
-{
-    background-image: url('https://static.vecteezy.com/system/resources/previews/000/582/320/original/cctv-camera-icon-vector.jpg');
-}#invento-security2
-{
-    background-image: url('https://image.flaticon.com/icons/png/512/1183/1183632.png');
-}
-#down{
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 10%;
-    bottom: 10%;
-    z-index: 15;
-    background-color: rgba(240, 248, 255, 0);
-    border-radius: 48px;
-    box-shadow: 0px 0px 50px 0px black;
-    -webkit-backdrop-filter: blur(200px) ;
-    backdrop-filter: blur(200px) ;
-}
-#close{
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 20px 20px;
-    border-radius: 50%;
-    background-image: url('./images/close.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-#app-icon{
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    height: 30%;
-    border-radius: 38px;
-    transition: all ease-in-out 0.5s;
-}
-#app-icon:hover{
-    border-radius: 50%;
-}
-#app-text{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: absolute;
-    left: 40%;
-    top: 5%;
-    right: 20%;
-}
-#install{
-    background-color: rgb(23, 66, 255);
+    background-color: rgb(24, 24, 24);
     color: aliceblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 8px;
     position: absolute;
-    top: 25%;
-    right: 30%;
-    width: 30%;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.appimage{
+    border-radius: 4px;
     transition: all ease-in-out 0.5s;
 }
-#install:hover{
-    border-radius: 18px;
+.appimage:hover{
+    border-radius: 40px;
 }
-#des-title{
-    font-size: 25px;
-    position: absolute;
-    top: 40%;
-    left: 20px;
+.apptitle{
+    font-family: monospace;
+    font-size: 20px;
 }
-#des{
-    position: absolute;
-    top: 50%;
-    bottom: 10%;
-    left: 20px;
-    right: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
+.code{
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(255, 255, 255);
+    border: 1px white solid;
+    font-family: monospace;
+    font-size: large;width: 95%;
+    border-radius: 4px;
+    padding: 5px 0px;
+    border-bottom: 4px rgb(255, 255, 255) solid;
+    transition: all ease-in-out 0.5s;
 }
-a{
-    color: rgb(28, 149, 255);
-    text-decoration: none;
+.code:hover{
+    background-color: white;
+    color: black;
 }
-#loader{
-    border-radius: 50%;
-    position: absolute;
-    left: 48%;
-    top: 45%;
-    border-top: #ff4665 solid 5px;
-    border-left: #ff4665 solid 5px;
-    border-right: #ff4665 solid 5px;
-    border-bottom: #ff466500 solid 5px;
-    padding: 20px 20px;
-    z-index: 50;
-    animation: infinite 1s load;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-@keyframes load {
-    100%{
-        transform: rotate(360deg);
+@keyframes walchange {
+    10%{
+        background-image: url('https://wallpapercave.com/wp/wp8300726.jpg');
     }
+    20%{
+background-image: url('https://th.bing.com/th/id/R.ae1f93d6690b9e82ecff946df36d18da?rik=lqz3YLj4BcGmxg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f11%2fCalm-HD-Wallpaper.jpg&ehk=nbsj8kmvO%2f9ckldCUSTD585IbD1ciQtoZs4XlKu4mGY%3d&risl=&pid=ImgRaw&r=0');
+    }
+    30%{
+background-image: url('https://hddesktopwallpapers.in/wp-content/uploads/2015/09/romantic-sunset-wallpapers.jpg');
+    }
+    40%{
+        background-image: url('https://wallup.net/wp-content/uploads/2016/01/210335-nature-landscape.jpg');
+
+    }
+    50%{
+        background-image: url('https://th.bing.com/th/id/R.848bcccb09dd3c0e8965d5dd9ca3a488?rik=iItMzlAXXs38VQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f7%2fe%2fa%2f520867.jpg&ehk=5cJLeQOC3Dfp7qaRc6ATo5NlaN0up4MzFw2eTzexnr4%3d&risl=&pid=ImgRaw&r=0');
+
+    }
+    60%{
+        background-image: url('https://images.unsplash.com/photo-1641750909685-a869b7c3fd69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+
+    }
+    70%{
+        background-image: url('https://images.unsplash.com/photo-1642371869586-0ab5d256d008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+
+    }
+    80%{
+        background-image: url('https://images.unsplash.com/photo-1626184265442-526a3deaeb9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+
+    }
+    90%{
+        background-image: url('https://images.unsplash.com/photo-1613097417298-a7a3917abd85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzfGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+
+    }
+    100%{
+        background-image: url('https://images.unsplash.com/photo-1639976519621-ed980892b285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+
+    }
+}
+*{
+    font-family: monospace;
+    font-weight: 600;
+}
+#warndiv{
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    right: 30%;
+    left: 30%;
+    z-index: 20;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 8px;
+    padding: 10px;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    -moz-backdrop-filter: blur(30px);
+    visibility: hidden;
 }
