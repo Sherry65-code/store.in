@@ -1,5 +1,5 @@
 #header{
-    background-color: rgb(24, 24, 24);
+    background-color: rgba(24, 24, 24, 0.315);
     color: aliceblue;
     font-family: monospace;
     font-weight: 600;
@@ -10,6 +10,8 @@
     right: 0;
     padding: 20px;
     z-index: 500;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 body{
     background-image: url('https://www.wallpapers13.com/wp-content/uploads/2018/11/The-Magic-Islands-of-Lofoten-Norway-Europe-winter-morning-light-landscape-Desktop-HD-Wallpaper-For-PC-Tablet-And-Mobile-3840x2160-915x515.jpg');
@@ -29,17 +31,15 @@ body{
     height: 20px;
     text-align: center;
     transition: all ease-in-out 0.5s;
+    overflow: hidden;
 }
 #dropdown:hover{
     height: 60px;
 }
-#dropdown:hover a{
-    color: aliceblue
-}
 a{
-    color: rgba(240, 248, 255, 0);
     text-decoration: none;
     transition: all ease-in-out 0.5s;
+    color: burlywood;
 }
 #main{
     background-color: rgba(255, 0, 0, 0);
@@ -48,10 +48,11 @@ a{
     left: 0;
     right: 0;
     top: 76px;
-    padding-inline-start: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
-
+    padding-inline-start: 5px;
+    padding-inline-end: 15px;
+    text-align: center;
 }
 ::-webkit-scrollbar{
     width: 1px;
@@ -62,20 +63,28 @@ h1{
     font-size: 32px;
 }
 .app{
-    background-color: rgb(24, 24, 24);
+    background-color: rgba(24, 24, 24, 0.151);
     color: aliceblue;
-    position: absolute;
     padding: 10px;
+    width: 98%;
     border-radius: 4px;
     text-align: center;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    
 }
 .appimage{
-    border-radius: 4px;
+    border-radius: 15px;
     transition: all ease-in-out 0.5s;
+    width: 200px;
+    border: none;
+    height: 200px;
+    background-color: rgba(240, 248, 255, 0);
 }
-.appimage:hover{
-    border-radius: 40px;
-}
+
 .apptitle{
     font-family: monospace;
     font-size: 20px;
@@ -90,6 +99,7 @@ h1{
     padding: 5px 0px;
     border-bottom: 4px rgb(255, 255, 255) solid;
     transition: all ease-in-out 0.5s;
+    width: ;
 }
 .code:hover{
     background-color: white;
